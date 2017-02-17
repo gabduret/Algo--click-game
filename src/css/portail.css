@@ -1,0 +1,353 @@
+html,
+body
+{
+  background: #7fac71;
+  width: 100%;
+  height: 100%;
+  font-family: 'Slapstick';
+}
+
+/*****************
+**FALLLING TOWN**
+****************/
+.full-portail
+{
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-image: url(../images/villes/wallhaven-143432.jpg);
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+.full-portail .logo-game
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  z-index: 5;
+}
+.full-portail .logo-game img
+{
+  width: 40%;
+  height: 40%;
+}
+
+.full-portail .game-text
+{
+  font-family: 'Source Sans Pro', cursive;
+  width: 55%;
+  margin: auto;
+  font-size: 17px;
+  text-align: center;
+  color: #ededed;
+  z-index: 5;
+}
+
+.full-portail .game-text p
+{ 
+  text-shadow: 0 0 2px #3c3c3a;
+}
+
+
+.full-portail .portail-city
+{
+  margin-top: 38vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 0%;
+  background: rgba(255, 0, 0, 0.75);
+}
+
+.full-portail .falling-town
+{
+  width: 35%;
+  position: relative;
+}
+.full-portail .falling-town img
+{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.full-portail .portail-menu
+{
+  width: 100%;
+}
+.full-portail .game-button
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.full-portail .game-button a
+{
+  text-decoration: none;
+  font-size: 24px;
+  color: aliceblue;
+  font-weight: bold;
+  padding: 10px 90px;
+  background: #e28700;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+}
+.full-portail .game-button a:hover
+{
+  color: #6d4200;
+}
+
+
+
+
+
+/*************************
+****** ANIMATIONS *******
+************************/
+/**** CLOUDS ****/
+.full-clouds
+{
+  position: absolute;
+  margin-top: -100px;
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+}
+.cloud
+{
+  width: 200px;
+  height: 60px;
+  z-index: 1;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+  will-change: transform;
+}
+
+.cloud:after,
+.cloud:before
+{
+  background: #fff;
+  content: '';
+  position: absolute;
+  will-change: transform;
+}
+
+.cloud:before
+{
+  width: 130px;
+  height: 50px;
+  right: 45px;
+  top: -35px;
+}
+
+.cloud:after
+{
+  width: 100px;
+  height: 70px;
+  left: 70px;
+  top: -50px;
+}
+
+@-webkit-keyframes animateCloud
+{
+  0% {
+    -webkit-transform: translateX(-450px);
+            transform: translateX(-450px);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes animateCloud
+{
+  0% {
+    -webkit-transform: translateX(-450px);
+            transform: translateX(-450px);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+@-webkit-keyframes animateCloud-2
+{
+  0% {
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+@keyframes animateCloud-2
+{
+  0% {
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+@-webkit-keyframes animateCloud-3
+{
+  0% {
+    -webkit-transform: translateX(-650px);
+            transform: translateX(-650px);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+@keyframes animateCloud-3
+{
+  0% {
+    -webkit-transform: translateX(-650px);
+            transform: translateX(-650px);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+@-webkit-keyframes animateCloud-4
+{
+  0% {
+    -webkit-transform: translateX(-1050px);
+            transform: translateX(-1050px);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+@keyframes animateCloud-4
+{
+  0% {
+    -webkit-transform: translateX(-1050px);
+            transform: translateX(-1050px);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+.cloud-1
+{
+  -webkit-animation: animateCloud 30s linear infinite;
+          animation: animateCloud 30s linear infinite;
+  -webkit-transform: scale(0.35);
+          transform: scale(0.35);
+  will-change: transform;
+  margin-top: 30px;
+}
+
+.cloud-2
+{
+  -webkit-animation: animateCloud-4 95s linear infinite;
+          animation: animateCloud-4 95s linear infinite;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  will-change: transform;
+  margin-top: 30px;
+}
+
+.cloud-3
+{
+  -webkit-animation: animateCloud-2 50s linear infinite;
+          animation: animateCloud-2 50s linear infinite;
+  -webkit-transform: scale(0.69);
+          transform: scale(0.69);
+  will-change: transform;
+  margin-top: -10px;
+}
+.cloud-4
+{
+  -webkit-animation: animateCloud-3 75s linear infinite;
+          animation: animateCloud-3 75s linear infinite;
+  -webkit-transform: scale(0.35);
+          transform: scale(0.35);
+  will-change: transform;
+  margin-top: 0px;
+}
+
+.cloud-5
+{
+  -webkit-animation: animateCloud-2 60s linear infinite;
+          animation: animateCloud-2 60s linear infinite;
+  -webkit-transform: scale(0.65);
+          transform: scale(0.65);
+  will-change: transform;
+  margin-top: -80px;
+}
+
+
+/***************************
+****** PIXEL PORTAIL ******
+**************************/
+
+.full-pixel
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 100;
+}
+.full-pixel>div
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  height: 10%;
+}
+
+.full-pixel .pixel
+{
+  background: #fff;
+  width: 5%;
+  height: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+/*  transform-origin: 100% 50%;*/
+  will-change: tranform;
+}
+
+.full-pixel .pixel-opacity
+{
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}

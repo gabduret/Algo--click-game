@@ -1,0 +1,430 @@
+
+/* --------------------------
+------ GAME PART ----------
+--------------------------*/
+
+@media (max-width: 950px)
+{
+  #gamePart .full-display
+  {
+    height: 60px;
+  }
+
+  #gamePart .actualDamagePerSecond
+  {
+    height: 15px;
+  }
+
+  #gamePart .actualDamagePerSecond .damage
+  {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  #gamePart .actualLevel
+  {
+    height: 15px;
+  }
+
+  #gamePart .actualLevel .level
+  {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  #gamePart .healthPointBar
+  {
+    height: 20px;
+    border: 3px solid #000000;
+  }
+
+  #gamePart .healthPointBar .health
+  {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  
+  #gamePart .domeHealthPointBar
+  {
+    height: 20px;
+    border: 3px solid #000000;
+    margin-top: -25px;
+  }
+
+  #gamePart .domeHealthPointBar .domeHealth
+  {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  #gamePart .actualSouls .souls
+  {
+    font-size: 15px;
+  }
+  #gamePart .actualSouls .soulsIcon
+  {
+    bottom: -10px;
+  }
+  #gamePart #city
+  {
+    width: 250px;
+    height: 275px;
+  }
+  #gamePart #dome {
+    position: absolute;
+    width: 350px;
+    height: 370px;
+    z-index: 10;
+    bottom: 0;
+  }
+  #gamePart #hero
+  {
+    width: 60px;
+  }
+  #gamePart #hero img
+  {
+    width: 100%;
+  }
+  #gamePart #commander
+  {
+    height: 60px;
+  }
+  #gamePart #commander img
+  {
+    width: 7vw;
+  }
+  .full-army
+  {
+    height: 100px;
+  }
+  .full-army .generatedStormtrooperArmy,
+  .full-army .generatedZombieArmy,
+  .full-army .generatedClownArmy
+  {
+    width : 35px;
+    height : 35px;
+    margin-right: -10px;
+    background-size: contain;
+    display : inline-block;
+  }
+  .full-army #generatedStormtrooperArmyLure,
+  .full-army #generatedZombieArmyLure,
+  .full-army #generatedClownArmyLure
+  {
+    width : 35px;
+    height : 35px;
+    display : inline-block;
+  }
+}
+
+@media (max-width: 450px)
+{
+  #gamePart .full-display
+  {
+    height: 40px;
+  }
+
+  #gamePart .actualDamagePerSecond,
+  #gamePart .actualHeroDamage
+  {
+    height: 10px;
+  }
+
+  #gamePart .actualDamagePerSecond .damage,
+  #gamePart .actualHeroDamage .damage
+  {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  #gamePart .actualHeroDamage
+  {
+    margin-top: 5px;
+  }
+
+  #gamePart .actualLevel
+  {
+    height: 10px;
+  }
+
+  #gamePart .actualLevel .level
+  {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  #gamePart .healthPointBar
+  {
+    height: 10px;
+    border: 3px solid #000000;
+    width: 60%;
+  }
+
+  #gamePart .healthPointBar .health
+  {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  #gamePart .domeHealthPointBar
+  {
+    height: 10px;
+    border: 3px solid #000000;
+    width: 60%;
+    margin-top: -15px;
+  }
+  #gamePart .domeHealthPointBar .domeHealth
+  {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  #gamePart .actualSouls
+  {
+    height: 15px;
+    margin-top: 8px;
+  }
+
+  #gamePart .actualSouls .souls
+  {
+    font-size: 10px;
+  }
+
+  #gamePart .actualSouls .soulsIcon img
+  {
+    width: 10px;
+  }
+  #gamePart #dome
+  {
+    position: absolute;
+    width: 275px;
+    height: 350px;
+    z-index: 10;
+    bottom: 0;
+  }
+  #gamePart #commander img
+  {
+    width: 30px;
+  }
+  .full-army .generatedStormtrooperArmy,
+  .full-army .generatedZombieArmy,
+  .full-army .generatedClownArmy
+  {
+    width : 25px;
+    height : 25px;
+    margin-right: -5px;
+    background-size: contain;
+    display : inline-block;
+  }
+  .full-army #generatedStormtrooperArmyLure,
+  .full-army #generatedZombieArmyLure,
+  .full-army #generatedClownArmyLure
+  {
+    width : 25px;
+    height : 25px;
+    display : inline-block;
+  }
+}
+
+/* -----------------------------------
+------ UPGRADE/SLIDER FINI ----------
+-----------------------------------*/
+
+@media (max-width: 1100px)
+{
+  #gamePart
+  {
+    width: 70%;
+    height: 100%;
+  }
+  .full-upgrades
+  {
+    width: 30%;
+    height: 100%;
+  }
+
+
+}
+
+@media (max-width: 950px)
+{
+  #gamePart
+  {
+    width: 100%;
+    height: 65%;
+  }
+  .full-upgrades
+  {
+    width: 100%;
+    height: 35%;
+    display: block;
+  }
+
+  .full-upgrades .sideBar-menu
+  {
+    float: left;
+    width: 15%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sideBar-contenu-minions,
+  .sideBar-contenu-commanders
+  {
+    width: 85%;
+    height: 100%;
+    float: left;
+  }
+  .sideBar-contenu-upgrades
+  {
+    width: 85%;
+    height: 100%;
+    float: left;
+  }
+  .full-boxInfos
+  {
+    width: 100%;
+    height: 100%;
+    position: inherit;
+  }
+  .full-upgrades .boxInfos_text_line p
+  {
+    font-size: 11px;
+    line-height: 12px;
+    width: 85%;
+  }
+  
+  .full-upgrades .sideBar-contenu-upgrades,
+  .full-upgrades .sideBar-contenu-minions
+  {
+    overflow-y: scroll;
+  }
+  .full-upgrades .sideBar-contenu-upgrades::-webkit-scrollbar,
+  .full-upgrades .sideBar-contenu-minions::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+  .full-upgrades .sideBar-contenu-upgrades::-webkit-scrollbar-thumb,
+  .full-upgrades .sideBar-contenu-minions::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #a5a5a5;
+}
+  .full-upgrades .menu-line
+  {
+    display: none;
+  }
+}
+
+@media (max-width: 805px)
+{
+  .full-upgrades .upgrade-left>p
+  {
+    padding: 0 30px;
+  } 
+
+}
+
+@media (max-width: 450px)
+{
+  body
+  {
+    width: 96vw;
+  }
+  .full-upgrades
+  {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .full-upgrades .sideBar-menu
+  {
+    float: left;
+    width: 100%;
+    height: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .sideBar-contenu-upgrades,
+  .sideBar-contenu-minions,
+  .sideBar-contenu-commanders
+  {
+    width: 100%;
+    height: 100%;
+    float: left;
+  }
+  
+  .full-boxInfos{
+    height: 100%;
+  }
+
+  .full-upgrades .upgrade-left>p
+  {
+    padding: 0 0px;
+  }
+  .full-upgrades .sideBar-menu a img
+  {
+    width: 25px;
+  }
+}
+
+
+/****************************
+********* PORTAIL **********
+***************************/
+@media (max-width:990px)
+{
+  .full-portail 
+  {
+    background-size: cover;
+  }
+  .full-portail .falling-town
+  {
+    width: 50%;
+  }
+
+
+
+}
+
+@media (max-width:550px)
+{
+  .full-portail .falling-town
+  {
+    width: 70%;
+  }
+
+
+}
+
+
+
+/*****************
+** BOX - INFOS **
+****************/
+
+@media (max-width: 700px) 
+{
+  .full-boxInfos {
+    width: 100%;
+    height: 100%;
+    position: inherit;
+  }
+  .boxInfos_buttons img
+  {
+    margin-top: 10px;
+  }
+  .full-upgrades .sideBar-contenu-upgrades .upgrade-template
+  {
+    margin-left: 0;
+  }
+}

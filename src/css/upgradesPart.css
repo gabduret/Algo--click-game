@@ -1,0 +1,623 @@
+body
+{
+  color: cornsilk;
+  background: #777777;
+  font-family: Arial;
+  font-size: 14px;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: 'Outrun future', sans-serif;
+}
+/*******************
+****** UPGRADES ****
+*******************/
+
+.full-upgrades
+{
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  display: none;
+  width: 25%;
+  background: #313131;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.full-upgrades .sideBar-menu
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 8%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #7b7b7b;
+  border-radius: 0px 0 0 0;
+}
+
+.full-upgrades .sideBar-menu a
+{
+  text-decoration: none;
+  font-family: 'Kelly Slab', cursive;
+  font-size: 18px;
+  padding: 5px;
+}
+.full-upgrades .sideBar-menu a img
+{
+  width: 40px;
+}
+.full-upgrades .menu-line
+{
+  width: 100%;
+  height: 1%;
+  background: grey;
+  margin-top: 1%;
+  margin-bottom: 15px;
+}
+.full-upgrades .button
+{
+  will-change: opacity;
+}
+
+.full-upgrades .button:hover
+{
+  opacity: 0.7;
+}
+
+
+/**************************
+
+********TEMPLATE***********
+
+************************/
+/* SLIDER */
+.is-active{
+  display: block;
+  height: 87.5%;
+}
+.is-not-active{
+  display: none;
+}
+
+.full-upgrades
+{
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.full-upgrades .sideBar-contenu-commanders
+{
+  overflow-y: scroll;
+}
+.full-upgrades .sideBar-contenu-commanders::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+.full-upgrades .sideBar-contenu-commanders::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #a5a5a5;
+}
+.full-upgrades .sideBar-contenu-upgrades
+{
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.full-upgrades .upgrade-template
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #797917;
+  margin: 15px;
+  font-size: 15px;
+  background: #292929;
+  border: solid 4px #3e3e3e;
+  box-shadow: 0 0 10px 0 #141414;
+}
+.full-upgrades .upgrade-template a
+{
+  text-decoration: none;
+  color: #ededed;
+}
+
+.full-upgrades .upgrade-left
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  line-height: 20px;
+  width: 50%;
+  height: 70px;
+}
+
+.full-upgrades .upgrade-left .up-price
+{
+  width: 60%;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 15px;
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #e28700;
+  position: relative;
+}
+.full-upgrades .upgrade-left .up-price:hover
+{
+  background: #e28700;
+  color: #6d4200; 
+  cursor: url(../images/villes/money.png) 15 15, auto;
+}
+.full-upgrades .upgrade-left .up-price:hover .up-price-reflect
+{
+  opacity: 0.4;
+}
+
+.full-upgrades .upgrade-left .up-price:active
+{
+  cursor: url(../images/villes/money_active.png) 15 15, auto;
+}
+.full-upgrades .up-price span
+{
+  padding: 20px;
+}
+
+
+.full-upgrades .upgrade-left .up-price img
+{
+  width: 20px;
+}
+
+.full-upgrades .up-price-reflect
+{
+  position: absolute;
+  top: 3px;
+  width: 90%;
+  height: 13px;
+  background: #f7c276;
+  border-radius: 6px;
+  will-change: opacity;
+  opacity: 0.3;
+}
+
+
+
+.full-upgrades .upgrade-right
+{
+  width: 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.full-upgrades .upgrade-right img
+{
+  margin-right: 40px;
+  width: 70px;
+}
+.full-upgrades .soul-icon img
+{
+  width: 40px;
+}
+
+
+/******************************
+HEROES & SOLDIERS :HOVER::AFTER
+******************************/
+
+.upgrade-template
+{
+  position: relative;
+}
+
+.perso-alien:hover::after
+{
+  z-index: 11;
+  line-height: 16px;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: -124px;
+  left: 0px;
+  width: 250px;
+  content: 'Alien (or "xenomorph" for purists) is a terrifying creature capable of the worst. The suffering caused by his fangs and claws is unrivaled, hence his utility in your command. It multiplies the damage of clicks by 3.';
+  padding: 7px;
+  color: #d0d0d0;
+  background-color: #313130;
+  border: solid 5px #b9b9b9;
+}
+
+.perso-darthVader:hover::after
+{
+  z-index: 11;
+  line-height: 16px;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: -124px;
+  left: 0px;
+  width: 250px;
+  content: "The famous Master Sith gets a new light saber and joins your ranks to test it. It reinforces the attack of the stormtroopers by 2.";
+  padding: 7px;
+  color: #d0d0d0;
+  background-color: #313130;
+  border: solid 5px #b9b9b9;
+}
+
+.perso-joker:hover::after
+{
+  z-index: 11;
+  line-height: 16px;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: -124px;
+  left: 0px;
+  width: 250px;
+  content: "A cargo of explosives arrived earlier than expected to the Joker, he can share his expertise and his equipment with you. It multiplies the number of soldiers in your army by 1.5.";
+  padding: 7px;
+  color: #d0d0d0;
+  background-color: #313130;
+  border: solid 5px #b9b9b9;
+}
+
+.perso-godzilla:hover::after
+{
+  z-index: 11;
+  line-height: 16px;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: -124px;
+  left: 0px;
+  width: 250px;
+  content: "Godzilla has experience in the destruction of buildings. He will be a great ally as a commander. It reinforces the attack of your clicks by 3.5.";
+  padding: 7px;
+  color: #d0d0d0;
+  background-color: #313130;
+  border: solid 5px #b9b9b9;
+}
+
+.perso-ghostface:hover::after
+{
+  z-index: 11;
+  line-height: 16px;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: -124px;
+  left: 0px;
+  width: 250px;
+  content: "Ghostface likes to make phone calls to terrorize the residents of his neighborhood. He took a knife and, in an unconventional way, put an end to the lives of the people he met. It reinforces the attack of your clicks against the domes by 2.";
+  padding: 7px;
+  color: #d0d0d0;
+  background-color: #313130;
+  border: solid 5px #b9b9b9;
+}
+
+.perso-hitler:hover::after
+{
+  z-index: 11;
+  line-height: 16px;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: -124px;
+  left: 0px;
+  width: 250px;
+  content: "Being taken for dead since 1945, Hitler cultivates an even more devastating rage and needs to let off steam alongside another villain. He tripled the number of souls gathered at the destruction of a city.";
+  padding: 7px;
+  color: #d0d0d0;
+  background-color: #313130;
+  border: solid 5px #b9b9b9;
+}
+
+.perso-freezer:hover::after
+{
+  z-index: 11;
+  line-height: 16px;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: -124px;
+  left: 0px;
+  width: 250px;
+  content: "Freezer has a busy past, he steals, uses unusual powers and abilities and knows how to cope with any obstacle. It multiplies your damage against the domes by 1.75.";
+  padding: 7px;
+  color: #d0d0d0;
+  background-color: #313130;
+  border: solid 5px #b9b9b9;
+}
+
+.perso-chucky:hover::after
+{
+  z-index: 11;
+  line-height: 16px;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: -124px;
+  left: 0px;
+  width: 250px;
+  content: "Chucky is a nice puppet that scares and kills people. But it’s not enough. He still wants to tackle bigger (like cities and why not mega-cities). It reinforces the attack of the clowns by 2.";
+  padding: 7px;
+  color: #d0d0d0;
+  background-color: #313130;
+  border: solid 5px #b9b9b9;
+}
+
+.perso-dracula:hover::after
+{
+  z-index: 11;
+  line-height: 16px;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: -124px;
+  left: 0px;
+  width: 250px;
+  content: "Dracula is not just a vampire! This is THE vampire. Everyone knows him. It frightens both young children and older one and it reinforces the attack of the zombies. It multiplies the damage of the zombies by 2.";
+  padding: 7px;
+  color: #d0d0d0;
+  background-color: #313130;
+  border: solid 5px #b9b9b9;
+}
+
+.perso-freddie:hover::after
+{
+  z-index: 11;
+  line-height: 16px;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 74px;
+  left: 0px;
+  width: 250px;
+  content: "With his formidable claws, he likes to cut heads abundantly and facilitates the task of his allies. It will help you and will bring you a 25% reduction in your improvements.";
+  padding: 7px;
+  color: #d0d0d0;
+  background-color: #313130;
+  border: solid 5px #b9b9b9;
+}
+
+#addStormtrooper:hover::after
+{
+  z-index: 11;
+  line-height: 16px;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: -75px;
+  left: 0px;
+  width: 250px;
+  content: 'Stormtroopers are a bit stupid but they are very loyal. One of them allow you 1,25 damage per second.';
+  padding: 7px;
+  color: #d0d0d0;
+  background-color: #313130;
+  border: solid 5px #b9b9b9;
+}
+
+#addClown:hover::after
+{
+  z-index: 11;
+  line-height: 16px;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 74px;
+  left: 0px;
+  width: 250px;
+  content: 'Clowns look cute like that but they are real bloodthirsty warriors. One of them allow you 2,75 damage per second.';
+  padding: 7px;
+  color: #d0d0d0;
+  background-color: #313130;
+  border: solid 5px #b9b9b9;
+}
+
+#addZombie:hover::after
+{
+  z-index: 11;
+  line-height: 16px;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 74px;
+  left: 0px;
+  width: 250px;
+  content: 'Zombies are as slow as snails but are best in frontal attack. One of them allow you 4,25 damage per second.';
+  padding: 7px;
+  color: #d0d0d0;
+  background-color: #313130;
+  border: solid 5px #b9b9b9;
+}
+
+
+/*******************
+*******BOX*********
+******************/
+.full-boxInfos
+{
+  position: absolute;
+  bottom: -0.5px;
+  height: 35%;
+  width: 100%;
+}
+
+
+.boxInfos
+{
+  width: 100%;
+  height: 100%;
+  color: #d0d0d0;
+}
+
+
+/*** PLAYER ***/
+
+.boxInfos_player
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 20%;
+  background-color: #909090;
+  box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.5);
+}
+
+.boxInfos_player img
+{
+  margin: 3px;
+  width: 20px;
+  will-change: opacity;
+}
+
+.boxInfos_player span
+{
+  font-size:13px;
+  color:#525252;
+  display:inline-block;
+  padding-left: 20px;
+}
+
+.boxInfos_player a:hover img
+{
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.volume
+{
+  padding: 20px;
+  will-change:opacity;
+}
+
+/*** JSON TEXT ***/
+
+.boxInfos_text
+{
+  overflow: hidden;
+  overflow-y: scroll;
+  position: relative;
+  font-size: 15px;
+  width: 100%;
+  height: 80%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.boxInfos_text::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+.boxInfos_text::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #a5a5a5;
+}
+.boxInfos_text_line
+{
+  width: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.boxInfos_text_line span
+{
+  margin: 0px 15px;
+  font-size: 12px;
+  font-weight: 600;
+  display: block;
+  float: left;
+  text-align: center;
+}
+
+.boxInfos_text_line p
+{
+  display: block;
+  line-height: 15px;
+  padding-right: 8px;
+  font-size: 13px;
+  float: right;
+  width: 80%;
+}
+
+.line
+{
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #727272;
+  margin: 15px 0px;
+}
+
+
+/*** INFO ***/
+
+.boxInfos_info
+{
+  color: #d0d0d0;
+  font-size: 12px;
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 5px;
+  border-radius: 10px;
+  will-change: opacity;
+}
+
+.boxInfos:hover .boxInfos_info
+{
+  background-color: #727272;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
